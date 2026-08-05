@@ -8,9 +8,9 @@
   <title>RS-DETAILING | Премиальный детейлинг в Ростове-на-Дону</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root { --bg: #050505; --bg-secondary: #0a0a0a; --accent: #F5A623; --text: #FFFFFF; --border: #1a1a1a; }
+    :root { --bg: #050505; --bg-secondary: #0a0a0a; --accent: #F5A623; --text: #FFFFFF; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background-color: var(--bg); font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
     h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; }
@@ -19,30 +19,26 @@
     .accent-text { background: linear-gradient(135deg, #F5A623 0%, #FFD700 50%, #E67E22 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; background-size: 200% 200%; animation: shimmer 4s ease-in-out infinite; }
     @keyframes shimmer { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
 
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: clamp(12px, 2vw, 16px) clamp(24px, 4vw, 36px); border-radius: 50px; font-weight: 600; font-size: clamp(0.8rem, 1.1vw, 0.95rem); letter-spacing: 0.5px; text-decoration: none; transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1.2); cursor: pointer; border: none; font-family: 'Montserrat', sans-serif; text-align: center; position: relative; overflow: hidden; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: clamp(12px, 2vw, 16px) clamp(24px, 4vw, 36px); border-radius: 50px; font-weight: 600; font-size: clamp(0.8rem, 1.1vw, 0.95rem); letter-spacing: 0.5px; text-decoration: none; transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1.2); cursor: pointer; border: none; font-family: 'Montserrat', sans-serif; text-align: center; }
     .btn-primary { background: linear-gradient(135deg, #F5A623, #E67E22); color: #000; font-weight: 700; box-shadow: 0 8px 25px rgba(245, 166, 35, 0.3); }
     .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(245, 166, 35, 0.5); }
     .btn-outline { background: transparent; border: 2px solid rgba(245, 166, 35, 0.5); color: #F5A623; }
-    .btn-outline:hover { background: rgba(245, 166, 35, 0.1); border-color: #F5A623; transform: translateY(-3px); box-shadow: 0 10px 25px rgba(245, 166, 35, 0.2); }
+    .btn-outline:hover { background: rgba(245, 166, 35, 0.1); border-color: #F5A623; transform: translateY(-3px); }
     .btn-call { background: #E67E22; color: #fff; padding: clamp(14px, 2.5vw, 18px) clamp(28px, 5vw, 40px); font-size: clamp(0.9rem, 1.2vw, 1.05rem); font-weight: 700; width: 100%; }
     .btn-call:hover { background: #F5A623; transform: translateY(-3px); }
     .btn-back { background: transparent; border: 1px solid #333; color: #aaa; padding: 10px 24px; font-size: 0.85rem; margin-bottom: 30px; display: inline-flex; border-radius: 50px; }
     .btn-back:hover { border-color: #F5A623; color: #F5A623; background: rgba(245, 166, 35, 0.05); }
 
-    /* Навигация */
     .navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: rgba(5,5,5,0.85); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px); border-bottom: 1px solid rgba(245,166,35,0.08); padding: clamp(8px, 1.5vw, 12px) 0; }
     .navbar .container { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
     .nav-logo { height: clamp(50px, 8vw, 100px); width: auto; }
     .nav-links { display: flex; gap: clamp(12px, 2vw, 24px); align-items: center; list-style: none; }
     .nav-links a { color: #888; text-decoration: none; font-weight: 500; font-size: clamp(0.6rem, 1vw, 0.72rem); transition: color 0.3s ease; font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: 1.5px; position: relative; }
     .nav-links a::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 2px; background: #F5A623; transition: width 0.3s ease; }
-    .nav-links a:hover { color: #fff; }
-    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover { color: #fff; } .nav-links a:hover::after { width: 100%; }
     .nav-phone-btn { background: #F5A623; color: #000 !important; padding: 9px 18px; border-radius: 50px; font-weight: 700 !important; font-size: clamp(0.6rem, 1vw, 0.72rem) !important; transition: all 0.3s ease !important; }
-    .nav-phone-btn:hover { background: #E67E22 !important; transform: scale(1.05); }
-    .nav-phone-btn::after { display: none !important; }
+    .nav-phone-btn:hover { background: #E67E22 !important; transform: scale(1.05); } .nav-phone-btn::after { display: none !important; }
 
-    /* Hero */
     .hero { min-height: 100vh; display: flex; align-items: center; position: relative; background: radial-gradient(ellipse at 75% 50%, #0f0f0f 0%, #050505 70%); overflow: hidden; padding: clamp(100px, 15vh, 120px) 0 clamp(20px, 5vh, 40px); }
     .hero-glow { position: absolute; top: 10%; right: 5%; width: clamp(300px, 50vw, 700px); height: clamp(300px, 50vw, 700px); background: radial-gradient(circle, rgba(245,166,35,0.1) 0%, transparent 60%); z-index: 1; animation: glowPulse 8s ease-in-out infinite; }
     @keyframes glowPulse { 0%, 100% { opacity: 0.4; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.2); } }
@@ -66,7 +62,6 @@
     .hero-buttons { display: flex; flex-wrap: wrap; gap: clamp(10px, 1.5vw, 15px); opacity: 0; transform: translateY(30px); animation: fadeInUp 0.8s ease forwards; animation-delay: 1.25s; }
     @keyframes fadeInUp { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
 
-    /* Разделитель */
     .divider-car-section { height: clamp(300px, 40vw, 450px); background: var(--bg); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
     .divider-trail { position: absolute; top: 48%; left: 0; width: 100%; height: clamp(8px, 1.2vw, 12px); background: linear-gradient(to left, #F5A623 0%, rgba(245,166,35,0.9) 15%, rgba(245,166,35,0.6) 35%, rgba(245,166,35,0.3) 55%, transparent 80%); z-index: 2; opacity: 0; transition: opacity 0.5s ease; border-radius: 6px; box-shadow: 0 0 35px rgba(245,166,35,0.9), 0 0 70px rgba(245,166,35,0.6); }
     .divider-trail::after { content: ''; position: absolute; top: -26px; left: 3%; width: 94%; height: 100%; background: linear-gradient(to left, rgba(245,166,35,0.7) 0%, rgba(245,166,35,0.4) 25%, rgba(245,166,35,0.15) 50%, transparent 75%); border-radius: 6px; filter: blur(10px); }
@@ -76,7 +71,6 @@
     .divider-car-section.animate .divider-trail { opacity: 1; transition: opacity 0.5s ease; }
     .divider-car-section.animate .divider-car { right: 120%; opacity: 1; transition: right 4.5s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.5s ease; }
 
-    /* Секции */
     .section-title { font-size: clamp(1.8rem, 3.5vw, 2.8rem); margin-bottom: clamp(10px, 1.5vw, 15px); text-align: center; font-weight: 800; }
     .section-subtitle { text-align: center; color: #666; margin-bottom: clamp(40px, 5vw, 60px); font-size: clamp(0.85rem, 1.1vw, 1rem); max-width: 600px; margin-left: auto; margin-right: auto; }
 
