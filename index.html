@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <meta name="description" content="RS-DETAILING — премиальный детейлинг в Ростове-на-Дону. Профессиональная полировка, химчистка, керамика, оклейка кузова. Работаем с юрлицами. Звоните +7 (928) 766-65-10">
-  <meta name="keywords" content="детейлинг Ростов-на-Дону, полировка кузова, химчистка салона, керамическое покрытие, мойка двигателя, антидождь, предпродажная подготовка, RS-Detailing">
+  <meta name="description" content="RS-DETAILING — премиальный детейлинг в Ростове-на-Дону. Полировка, химчистка, керамика, оклейка плёнкой. Работаем с юрлицами. Звоните +7 (928) 766-65-10">
   <meta property="og:image" content="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_8688.JPG">
   <title>RS-DETAILING | Премиальный детейлинг в Ростове-на-Дону</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +27,7 @@
     .btn-call { background: #E67E22; color: #fff; padding: clamp(14px, 2.5vw, 18px) clamp(28px, 5vw, 40px); font-size: clamp(0.9rem, 1.2vw, 1.05rem); font-weight: 700; width: 100%; }
     .btn-call:hover { background: #F5A623; transform: translateY(-3px); }
     .btn-back { background: transparent; border: 1px solid #333; color: #aaa; padding: 10px 24px; font-size: 0.85rem; margin-bottom: 30px; display: inline-flex; border-radius: 50px; }
-    .btn-back:hover { border-color: #F5A623; color: #F5A623; background: rgba(245, 166, 35, 0.05); }
+    .btn-back:hover { border-color: #F5A623; color: #F5A623; }
 
     .navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: rgba(5,5,5,0.85); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px); border-bottom: 1px solid rgba(245,166,35,0.08); padding: clamp(6px, 1vw, 10px) 0; }
     .navbar .container { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
@@ -102,12 +101,29 @@
 
     .case { background: var(--bg-secondary); padding: clamp(60px, 8vw, 100px) 0; }
     .case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 5vw, 60px); align-items: center; }
-    .case-text h2 { font-size: clamp(1.6rem, 2.8vw, 2.2rem); margin-bottom: 20px; }
     .case-text p { color: #999; margin-bottom: 15px; font-size: clamp(0.85rem, 1vw, 0.95rem); line-height: 1.7; }
-    .case-list { list-style: none; margin: 20px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    .case-list li { color: #bbb; font-size: clamp(0.75rem, 0.9vw, 0.85rem); padding-left: 20px; position: relative; }
-    .case-list li::before { content: "✓"; color: #F5A623; font-weight: bold; position: absolute; left: 0; }
     .case-photo { width: 100%; height: clamp(300px, 42vw, 480px); object-fit: cover; border-radius: 20px; border: 1px solid rgba(255,255,255,0.04); }
+    .case-collage { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+    .case-collage img { width: 100%; height: clamp(200px, 28vw, 350px); object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); }
+    .case-story { color: #aaa; line-height: 1.8; font-size: clamp(0.85rem, 1vw, 0.95rem); }
+    .case-story p { margin-bottom: 20px; }
+    .case-story h3 { color: #F5A623; margin: 25px 0 15px; }
+
+    .blog { background: var(--bg); padding: clamp(60px, 8vw, 100px) 0; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: clamp(20px, 2.5vw, 30px); }
+    .blog-card { background: rgba(12,12,12,0.7); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; overflow: hidden; transition: all 0.4s ease; backdrop-filter: blur(15px); }
+    .blog-card:hover { border-color: rgba(245,166,35,0.3); transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+    .blog-card img { width: 100%; height: clamp(180px, 22vw, 250px); object-fit: cover; }
+    .blog-card-content { padding: clamp(20px, 2.5vw, 28px); }
+    .blog-card h3 { font-size: clamp(1.1rem, 1.5vw, 1.3rem); margin-bottom: 10px; color: #F5A623; }
+    .blog-card p { color: #999; font-size: clamp(0.8rem, 0.95vw, 0.9rem); line-height: 1.6; margin-bottom: 15px; }
+
+    .reviews { background: var(--bg-secondary); padding: clamp(60px, 8vw, 100px) 0; text-align: center; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: clamp(15px, 2vw, 25px); margin-top: 40px; }
+    .review-card { background: rgba(12,12,12,0.7); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: clamp(25px, 3vw, 35px); text-align: left; backdrop-filter: blur(15px); }
+    .review-stars { color: #F5A623; font-size: 1rem; margin-bottom: 10px; }
+    .review-text { color: #bbb; font-size: clamp(0.8rem, 0.9vw, 0.9rem); line-height: 1.6; margin-bottom: 15px; font-style: italic; }
+    .review-author { color: #888; font-size: 0.85rem; font-weight: 600; }
 
     .about { background: var(--bg-secondary); padding: clamp(60px, 8vw, 100px) 0; }
     .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(30px, 5vw, 60px); align-items: center; }
@@ -122,12 +138,13 @@
     .about-feature p { font-size: clamp(0.7rem, 0.85vw, 0.8rem); color: #777; margin: 0; }
     .about-photo { width: 100%; height: clamp(280px, 42vw, 480px); object-fit: cover; border-radius: 20px; border: 1px solid rgba(255,255,255,0.04); }
 
-    .reviews { background: var(--bg); padding: clamp(60px, 8vw, 100px) 0; text-align: center; }
-    .reviews-widget { background: rgba(12,12,12,0.7); border: 1px solid rgba(255,255,255,0.04); border-radius: 24px; padding: clamp(35px, 5vw, 55px) clamp(25px, 4vw, 45px); max-width: min(600px, 90vw); margin: 40px auto 0; backdrop-filter: blur(15px); }
-    .reviews-stars { font-size: clamp(1.5rem, 2vw, 2.2rem); margin-bottom: 15px; letter-spacing: 6px; }
-    .reviews-rating { font-size: clamp(3rem, 5vw, 5rem); font-weight: 900; background: linear-gradient(135deg, #F5A623, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-family: 'Montserrat', sans-serif; margin-bottom: 5px; }
-    .reviews-count { color: #777; margin-bottom: 25px; font-size: clamp(0.75rem, 0.9vw, 0.9rem); }
-    .reviews-text { color: #aaa; font-style: italic; margin-bottom: 30px; font-size: clamp(0.85rem, 1vw, 1rem); line-height: 1.7; }
+    .price-section { background: var(--bg-secondary); padding: clamp(60px, 8vw, 100px) 0; }
+    .price-table-wrapper { overflow-x: auto; margin-top: 20px; }
+    .price-table { width: 100%; border-collapse: collapse; font-size: clamp(0.7rem, 0.9vw, 0.85rem); }
+    .price-table th { background: rgba(245,166,35,0.15); color: #F5A623; padding: 12px 10px; text-align: left; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(0.65rem, 0.8vw, 0.75rem); text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+    .price-table td { padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #bbb; white-space: nowrap; }
+    .price-table tr:hover td { background: rgba(245,166,35,0.05); }
+    .price-table td:first-child { color: #fff; font-weight: 500; }
 
     .contacts { background: var(--bg-secondary); padding: clamp(60px, 8vw, 100px) 0; }
     .contacts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(25px, 3vw, 40px); margin-top: 50px; }
@@ -139,8 +156,13 @@
     .contact-manager { background: rgba(12,12,12,0.7); border-radius: 16px; padding: 22px; border: 1px solid rgba(255,255,255,0.03); margin-top: 20px; }
     .contact-manager h4 { font-weight: 700; margin-bottom: 12px; color: #F5A623; font-size: clamp(0.85rem, 1vw, 0.95rem); }
     .map-iframe { width: 100%; height: 100%; min-height: clamp(320px, 42vw, 500px); border: none; border-radius: 20px; border: 1px solid rgba(255,255,255,0.04); }
+    .messengers { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+    .messenger-btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; border-radius: 50px; font-weight: 600; font-size: 0.85rem; text-decoration: none; transition: all 0.3s ease; color: #fff; }
+    .messenger-btn.whatsapp { background: #25D366; }
+    .messenger-btn.telegram { background: #0088cc; }
+    .messenger-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
 
-    #promoDetailPage, #detailPage { display: none; min-height: 100vh; background: var(--bg); padding: clamp(90px, 13vw, 130px) 0 clamp(50px, 7vw, 80px); }
+    #promoDetailPage, #detailPage, #blogDetailPage, #caseDetailPage { display: none; min-height: 100vh; background: var(--bg); padding: clamp(90px, 13vw, 130px) 0 clamp(50px, 7vw, 80px); }
     .detail-header { text-align: center; margin-bottom: clamp(35px, 5vw, 55px); }
     .detail-header h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); margin-bottom: 12px; }
     .detail-price { font-size: clamp(1.3rem, 2.2vw, 2rem); background: linear-gradient(135deg, #F5A623, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700; font-family: 'Montserrat', sans-serif; }
@@ -176,6 +198,7 @@
       .divider-car { width: 50%; }
       .about-photo { height: 300px; }
       .map-iframe { min-height: 350px; }
+      .case-collage { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 480px) {
       .nav-logo { height: 40px; }
@@ -184,7 +207,7 @@
       .hero-title { font-size: 2rem; margin-bottom: 0.5rem; }
       .hero-sub { margin-bottom: 1.2rem; }
       .hero-stats { margin-bottom: 1.2rem; gap: 14px; }
-      .case-list { grid-template-columns: 1fr; }
+      .case-collage { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -193,7 +216,7 @@
     <div class="container">
       <a href="#hero"><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_8688-removebg-preview.png" alt="RS-Detailing" class="nav-logo"></a>
       <ul class="nav-links">
-        <li><a href="#promo">Акции</a></li><li><a href="#case">Кейс</a></li><li><a href="#services">Услуги</a></li><li><a href="#about">О нас</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#contacts">Контакты</a></li>
+        <li><a href="#promo">Акции</a></li><li><a href="#case">Кейс</a></li><li><a href="#services">Услуги</a></li><li><a href="#blog">Блог</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#price">Прайс</a></li><li><a href="#about">О нас</a></li><li><a href="#contacts">Контакты</a></li>
         <li><a href="tel:+79287666510" class="nav-phone-btn">📞 Позвонить</a></li>
       </ul>
     </div>
@@ -221,38 +244,86 @@
       <div style="text-align:center;z-index:4;position:relative;margin-top:90px;"><div style="width:80px;height:2px;background:linear-gradient(to right,transparent,rgba(245,166,35,0.4),transparent);margin:0 auto 8px;"></div><p style="color:#F5A623;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:3px;font-size:clamp(0.6rem,0.9vw,0.75rem);">ПРОФЕССИОНАЛЬНЫЙ УХОД</p></div>
     </section>
 
-    <section class="promo" id="promo"><div class="container"><h2 class="section-title">Специальные <span class="accent-text">предложения</span></h2><p class="section-subtitle">Выгодные условия на популярные услуги детейлинга в Ростове-на-Дону</p><div class="promo-cards"><div class="promo-card" id="promoDryClean"><span class="promo-badge">⚡ СКИДКА 15%</span><h3>Химчистка салона</h3><p>Глубокая очистка с использованием горячего экстрактора и премиальной химии. Вернём свежесть и уют вашему автомобилю.</p><a href="javascript:void(0)" class="btn btn-primary" onclick="openPromoDetail('dryclean')">Подробнее</a></div><div class="promo-card" id="promoPolishCeramic"><span class="promo-badge">✨ СКИДКА 10%</span><h3>Полировка + Керамика</h3><p>Комплексное восстановление блеска и защита лакокрасочного покрытия. Заводской вид и надёжная консервация на месяцы.</p><a href="javascript:void(0)" class="btn btn-primary" onclick="openPromoDetail('polishceramic')">Подробнее</a></div></div></div></section>
+    <section class="promo" id="promo"><div class="container"><h2 class="section-title">Специальные <span class="accent-text">предложения</span></h2><p class="section-subtitle">Выгодные условия на популярные услуги детейлинга</p><div class="promo-cards"><div class="promo-card" id="promoDryClean"><span class="promo-badge">⚡ СКИДКА 15%</span><h3>Химчистка салона</h3><p>Глубокая очистка с использованием горячего экстрактора и премиальной химии.</p><a href="javascript:void(0)" class="btn btn-primary" onclick="openPromoDetail('dryclean')">Подробнее</a></div><div class="promo-card" id="promoPolishCeramic"><span class="promo-badge">✨ СКИДКА 10%</span><h3>Полировка + Керамика</h3><p>Комплексное восстановление блеска и защита лакокрасочного покрытия.</p><a href="javascript:void(0)" class="btn btn-primary" onclick="openPromoDetail('polishceramic')">Подробнее</a></div></div></div></section>
 
-    <section class="case" id="case"><div class="container"><h2 class="section-title">Наш лучший <span class="accent-text">кейс</span></h2><p class="section-subtitle">Восстановление Chevrolet Corvette после падения беспилотника</p><div class="case-grid"><div><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0465.jpg" alt="Corvette" class="case-photo" loading="lazy"></div><div class="case-text"><p style="color:#F5A623;font-weight:600;font-size:1.05rem;">Один из самых сложных и интересных проектов нашей студии — полное восстановление Chevrolet Corvette, пострадавшего от падения беспилотника.</p><p>Автомобиль получил серьёзные повреждения кузова и остекления. Мы провели комплексную реставрацию, вернув автомобилю заводской вид и блеск.</p><h4 style="color:#F5A623;margin:20px 0 12px;">Выполненные работы:</h4><ul class="case-list"><li>Полный кузовной ремонт</li><li>Замена лобового стекла</li><li>Замена заднего стекла</li><li>Замена фары</li><li>Реставрация карбонового корпуса</li><li>Полная перекраска</li><li>Полировка кузова</li><li>Химчистка с разбором салона</li><li>Нанесение керамики</li><li>Антидождь</li><li>Мойка подкапотного пространства</li><li>Оклейка бронеплёнкой зон риска</li><li>Удаление запахов сухим туманом</li></ul></div></div></div></section>
+    <section class="case" id="case"><div class="container"><h2 class="section-title">Наш лучший <span class="accent-text">кейс</span></h2><p class="section-subtitle">Восстановление Chevrolet Corvette после атаки беспилотника</p><div class="case-grid"><div>
+      <img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0465.jpg" alt="Corvette" class="case-photo">
+      <div style="text-align:center;margin-top:20px;"><a href="javascript:void(0)" class="btn btn-primary" onclick="openCaseDetail()">📸 Смотреть До/После</a></div>
+    </div><div class="case-text"><p style="color:#F5A623;font-weight:600;font-size:1.05rem;">В жилой дом в Ростове-на-Дону попал беспилотник. Ударная волна и осколки разлетелись по парковке. Большая их часть, по ужасному стечению обстоятельств, попала в Chevrolet Corvette.</p><p>Лобовое стекло — в паутине. Заднего стекла не было совсем. Кузов — навылет в нескольких местах, багажник порван изнутри. Фара разбита. А ещё — в салоне долгое время жили кошки и другие животные, оставившие стойкий запах и следы жизнедеятельности.</p><p style="color:#F5A623;font-weight:600;">Владелица обратилась к нам с простой просьбой: «Спасите. Сделайте всё, что можно». И мы взялись.</p><a href="javascript:void(0)" class="btn btn-outline" onclick="openCaseDetail()" style="margin-top:10px;">Читать полную историю →</a></div></div></div></section>
 
     <section style="height:clamp(60px,8vw,100px);background:var(--bg);display:flex;align-items:center;justify-content:center;text-align:center;"><div><div style="width:80px;height:2px;background:linear-gradient(to right,transparent,rgba(245,166,35,0.4),transparent);margin:0 auto 15px;"></div><p style="color:#F5A623;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:3px;font-size:0.7rem;">НАШИ УСЛУГИ</p></div></section>
-    <section class="services" id="services"><div class="container"><h2 class="section-title">Услуги и <span class="accent-text">цены</span></h2><p class="section-subtitle">Полный спектр профессиональных услуг по уходу за автомобилем в Ростове-на-Дону</p><div class="services-grid" id="servicesGrid"></div></div></section>
+    <section class="services" id="services"><div class="container"><h2 class="section-title">Услуги и <span class="accent-text">цены</span></h2><p class="section-subtitle">Полный спектр профессиональных услуг по уходу за автомобилем</p><div class="services-grid" id="servicesGrid"></div></div></section>
 
+    <section style="height:clamp(60px,8vw,100px);background:var(--bg);display:flex;align-items:center;justify-content:center;text-align:center;"><div><div style="width:80px;height:2px;background:linear-gradient(to right,transparent,rgba(245,166,35,0.4),transparent);margin:0 auto 15px;"></div><p style="color:#F5A623;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:3px;font-size:0.7rem;">БЛОГ</p></div></section>
+    <section class="blog" id="blog"><div class="container"><h2 class="section-title">Полезные <span class="accent-text">статьи</span></h2><p class="section-subtitle">Советы профессионалов RS-Detailing</p><div class="blog-grid">
+      <div class="blog-card"><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0482.JPG" alt="Путешествие" loading="lazy"><div class="blog-card-content"><h3>Как подготовить автомобиль к летнему путешествию</h3><p>Сезон отпусков в разгаре. Дальняя дорога — это нагрузка не только на водителя, но и на автомобиль.</p><a href="javascript:void(0)" class="btn btn-outline" onclick="openBlogDetail('summer')">Читать далее</a></div></div>
+      <div class="blog-card"><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0479.JPG" alt="Мифы" loading="lazy"><div class="blog-card-content"><h3>Мифы о детейлинге: правда от профессионалов</h3><p>Многие считают, что детейлинг — это дорого, долго и только для премиум-авто. Развеем главные мифы.</p><a href="javascript:void(0)" class="btn btn-outline" onclick="openBlogDetail('myths')">Читать далее</a></div></div>
+      <div class="blog-card"><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0480.JPG" alt="Химчистка" loading="lazy"><div class="blog-card-content"><h3>Скидка 15% на химчистку салона</h3><p>Хотите, чтобы салон вашего автомобиля снова стал свежим и чистым? Действует акция: скидка 15% на химчистку.</p><a href="javascript:void(0)" class="btn btn-outline" onclick="openBlogDetail('action')">Читать далее</a></div></div>
+    </div></div></section>
+
+    <section style="height:clamp(60px,8vw,100px);background:var(--bg);display:flex;align-items:center;justify-content:center;text-align:center;"><div><div style="width:80px;height:2px;background:linear-gradient(to right,transparent,rgba(245,166,35,0.4),transparent);margin:0 auto 15px;"></div><p style="color:#F5A623;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:3px;font-size:0.7rem;">ОТЗЫВЫ</p></div></section>
+    <section class="reviews" id="reviews"><div class="container"><h2 class="section-title">Отзывы <span class="accent-text">клиентов</span></h2><p class="section-subtitle">Нас рекомендуют автовладельцы Ростова-на-Дону</p><div class="reviews-grid">
+      <div class="review-card"><div class="review-stars">⭐ ⭐ ⭐ ⭐ ⭐</div><p class="review-text">«Отдавал машину на предпродажную подготовку. Подготовили автомобиль очень хорошо, сделали трёхфазную мойку кузова, почистили салон, в подарок почистили руль. Результатом доволен очень, в дальнейшем буду обращаться сюда ещё.»</p><p class="review-author">Алексей В.</p></div>
+      <div class="review-card"><div class="review-stars">⭐ ⭐ ⭐ ⭐ ⭐</div><p class="review-text">«Давно не видел такого скрупулезного подхода! Заказывал химчистку салона и мойку кузова. Вычистили каждую щель, под сиденьями — ни соринки. Уехал с ощущением, что купил новую машину. Огромное спасибо команде!»</p><p class="review-author">Дмитрий С.</p></div>
+      <div class="review-card"><div class="review-stars">⭐ ⭐ ⭐ ⭐ ⭐</div><p class="review-text">«Хочу поблагодарить RS-детейлинг за отличную работу! Машину привели в идеальное состояние — кузов блестит, салон идеально чистый, внимание к каждой мелочи. Видно, что мастера работают профессионально и с душой.»</p><p class="review-author">Елена П.</p></div>
+      <div class="review-card"><div class="review-stars">⭐ ⭐ ⭐ ⭐ ⭐</div><p class="review-text">«Сдавал машину на химчистку салона. Салон был запущенный, с пятнами на сиденьях и затертым пластиком, забрал — как новенькую! Приятно, что убрали запах, а не просто перебили ароматизатором.»</p><p class="review-author">Сергей М.</p></div>
+      <div class="review-card"><div class="review-stars">⭐ ⭐ ⭐ ⭐ ⭐</div><p class="review-text">«Обратился по рекомендации. Ребята знают своё дело, работают аккуратно и с душой. Результат превзошёл ожидания — буду постоянным клиентом.»</p><p class="review-author">Максим Д.</p></div>
+    </div>
+    <div style="margin-top:30px;"><a href="https://yandex.ru/maps/org/rs_detailing/22943131231/reviews/" target="_blank" class="btn btn-primary">Смотреть все отзывы на Яндекс.Картах ↗</a></div></div></section>
+
+    <section style="height:clamp(60px,8vw,100px);background:var(--bg);display:flex;align-items:center;justify-content:center;text-align:center;"><div><div style="width:80px;height:2px;background:linear-gradient(to right,transparent,rgba(245,166,35,0.4),transparent);margin:0 auto 15px;"></div><p style="color:#F5A623;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:3px;font-size:0.7rem;">ПРАЙС-ЛИСТ</p></div></section>
+    <section class="price-section" id="price"><div class="container"><h2 class="section-title">Полный <span class="accent-text">прайс-лист</span></h2><p class="section-subtitle">Все услуги с ценами по категориям автомобилей</p><div id="priceTable"></div></div></section>
+
+    <section style="height:clamp(60px,8vw,100px);background:var(--bg);display:flex;align-items:center;justify-content:center;text-align:center;"><div><div style="width:80px;height:2px;background:linear-gradient(to right,transparent,rgba(245,166,35,0.4),transparent);margin:0 auto 15px;"></div><p style="color:#F5A623;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:3px;font-size:0.7rem;">О НАС</p></div></section>
     <section class="about" id="about"><div class="container"><div class="about-grid"><div class="about-text"><h2>RS-Detailing — это <span class="accent-text">забота о вашем авто</span></h2><p class="lead">Ваш автомобиль заслуживает профессионального ухода. Мы возвращаем машинам первозданный вид и обеспечиваем долговременную защиту.</p><p>Студия RS-Detailing работает в Ростове-на-Дону более 7 лет. За это время мы обслужили свыше 2000 автомобилей — от представительских седанов до эксклюзивных спорткаров.</p><p>Используем только премиальную автохимию и профессиональное оборудование. Каждая услуга выполняется с соблюдением технологии и вниманием к деталям.</p><p>Работаем по договору. Несём материальную ответственность за каждый автомобиль.</p><p style="color:#F5A623;font-weight:600;margin-top:15px;">💼 Работаем с юридическими лицами — безналичный расчёт, полный пакет документов, НДС.</p><div class="about-features"><div class="about-feature"><div class="about-feature-icon">🛡️</div><h4>Гарантия</h4><p>Даём гарантию на все виды работ</p></div><div class="about-feature"><div class="about-feature-icon">⭐</div><h4>Качество</h4><p>Премиальные материалы и оборудование</p></div><div class="about-feature"><div class="about-feature-icon">☕</div><h4>Комфорт</h4><p>Уютная зона ожидания для клиентов</p></div><div class="about-feature"><div class="about-feature-icon">📋</div><h4>Договор</h4><p>Официальный договор и отчётность</p></div></div></div><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_9775.JPG" alt="Интерьер студии" class="about-photo" loading="lazy"></div></div></section>
-    <section class="reviews" id="reviews"><div class="container"><h2 class="section-title">Отзывы <span class="accent-text">клиентов</span></h2><p class="section-subtitle">Нас рекомендуют автовладельцы Ростова-на-Дону</p><div class="reviews-widget"><div class="reviews-stars">⭐ ⭐ ⭐ ⭐ ⭐</div><div class="reviews-rating">5.0</div><div class="reviews-count">Рейтинг на основе реальных отзывов на Яндекс.Картах</div><p class="reviews-text">«Каждый отзыв — это наша репутация. Мы ценим доверие клиентов и стремимся к безупречному результату в каждой работе.»</p><a href="https://yandex.ru/maps/org/rs_detailing/22943131231/reviews/?ll=39.681713%2C47.239682&z=16" target="_blank" class="btn btn-primary">Смотреть все отзывы на Яндекс.Картах ↗</a></div></div></section>
-    <section class="contacts" id="contacts"><div class="container"><h2 class="section-title">Контакты</h2><p class="section-subtitle">Ждём вас в нашей студии детейлинга в Ростове-на-Дону</p><div class="contacts-grid"><div class="contact-card"><p><strong>📍 Адрес</strong>г. Ростов-на-Дону, ул. Мечникова, 46</p><p><strong>📞 Телефон</strong><a href="tel:+79287666510">+7 (928) 766-65-10</a></p><p><strong>🕐 Режим работы</strong>Ежедневно, с 9:00 до 2:00</p><p style="color:#888;font-size:0.85rem;">Удобная парковка и комфортная зона ожидания</p><hr class="contact-divider"><div class="contact-manager"><h4>👩‍💼 Руководитель студии</h4><p style="margin-bottom:6px;font-weight:600;">Андреева Анастасия</p><p style="margin-bottom:6px;"><a href="tel:+79287572222">+7 (928) 757-22-22</a></p><p style="margin-bottom:0;font-size:0.9rem;"><strong style="font-size:0.65rem;">✉️ Почта</strong><br><a href="mailto:rs.detailing61@gmail.com">rs.detailing61@gmail.com</a></p></div><a href="tel:+79287666510" class="btn btn-call" style="margin-top:20px;">📞 Позвонить сейчас</a></div><iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?ll=39.681713%2C47.239682&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njg0Njg5NBIa0KDQvtGB0YHQuNGPLCDQoNC-0YHRgtC-0LIg0L3QsC3QlNC-0L3Rgywg0YPQu9C40YbQsCDQnNC10YfQvdC40LrQvtCy0LAsIDQ2IgoN2PT-QRUxI01C&z=16" allowfullscreen loading="lazy"></iframe></div></div></section>
+
+    <section style="height:clamp(60px,8vw,100px);background:var(--bg);display:flex;align-items:center;justify-content:center;text-align:center;"><div><div style="width:80px;height:2px;background:linear-gradient(to right,transparent,rgba(245,166,35,0.4),transparent);margin:0 auto 15px;"></div><p style="color:#F5A623;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:3px;font-size:0.7rem;">КОНТАКТЫ</p></div></section>
+    <section class="contacts" id="contacts"><div class="container"><h2 class="section-title">Контакты</h2><p class="section-subtitle">Ждём вас в нашей студии детейлинга в Ростове-на-Дону</p><div class="contacts-grid"><div class="contact-card"><p><strong>📍 Адрес</strong>г. Ростов-на-Дону, ул. Мечникова, 46</p><p><strong>📞 Телефон</strong><a href="tel:+79287666510">+7 (928) 766-65-10</a></p><p><strong>🕐 Режим работы</strong>Ежедневно, с 9:00 до 2:00</p><p style="color:#888;font-size:0.85rem;">Удобная парковка и комфортная зона ожидания</p>
+    <div class="messengers"><a href="https://wa.me/79287666510" target="_blank" class="messenger-btn whatsapp">💬 WhatsApp</a><a href="https://t.me/rsdetailing61" target="_blank" class="messenger-btn telegram">📱 Telegram</a></div>
+    <hr class="contact-divider"><div class="contact-manager"><h4>👩‍💼 Руководитель студии</h4><p style="margin-bottom:6px;font-weight:600;">Андреева Анастасия</p><p style="margin-bottom:6px;"><a href="tel:+79287572222">+7 (928) 757-22-22</a></p><p style="margin-bottom:0;font-size:0.9rem;"><strong style="font-size:0.65rem;">✉️ Почта</strong><br><a href="mailto:rs.detailing61@gmail.com">rs.detailing61@gmail.com</a></p></div><a href="tel:+79287666510" class="btn btn-call" style="margin-top:20px;">📞 Позвонить сейчас</a></div><iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?ll=39.681713%2C47.239682&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njg0Njg5NBIa0KDQvtGB0YHQuNGPLCDQoNC-0YHRgtC-0LIg0L3QsC3QlNC-0L3Rgywg0YPQu9C40YbQsCDQnNC10YfQvdC40LrQvtCy0LAsIDQ2IgoN2PT-QRUxI01C&z=16" allowfullscreen loading="lazy"></iframe></div></div></section>
     <footer><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_8688-removebg-preview.png" alt="RS-Detailing" class="footer-logo"><p style="font-family:'Montserrat',sans-serif;font-weight:700;color:#F5A623;font-size:1rem;">RS-DETAILING</p><p>© 2026 RS-DETAILING. Премиальный детейлинг в Ростове-на-Дону.</p><p style="margin-top:8px;"><a href="mailto:rs.detailing61@gmail.com">rs.detailing61@gmail.com</a> | <a href="tel:+79287666510">+7 (928) 766-65-10</a></p></footer>
   </div>
 
-  <div id="promoDetailPage">
-    <div class="container"><a href="#" class="btn btn-back" id="promoBackButton">← Назад к акциям</a><div class="detail-header"><h2 id="promoDetailTitle" class="accent-text"></h2></div><div class="detail-content"><div class="detail-info"><h3>Описание акции</h3><p id="promoDetailDesc"></p><h3>Стоимость</h3><div id="promoDetailPrices"></div><h3>Что входит</h3><ul id="promoDetailIncludes"></ul><div class="detail-actions"><a href="tel:+79287666510" class="btn btn-call" style="width:auto;">📞 Позвонить и записаться</a><a href="https://n1318221.yclients.com/" target="_blank" class="btn btn-outline">Онлайн-запись</a></div></div></div></div>
-  </div>
+  <div id="caseDetailPage"><div class="container"><a href="#" class="btn btn-back" id="caseBackButton">← Назад</a><div class="detail-header"><h2 class="accent-text">Как мы восстановили Chevrolet Corvette после атаки беспилотника</h2></div>
+    <div class="case-story">
+      <p>В жилой дом в Ростове-на-Дону попал беспилотник. Ударная волна и осколки разлетелись по парковке. Большая их часть, по ужасному стечению обстоятельств, попала в Chevrolet Corvette.</p>
+      <p>Лобовое стекло — в паутине. Заднего стекла не было совсем. Кузов — навылет в нескольких местах, багажник порван изнутри. Фара разбита. А ещё — в салоне долгое время жили кошки и другие животные, оставившие стойкий запах и следы жизнедеятельности. Владелица обратилась к нам в детейлинг в Ростове-на-Дону с простой просьбой: «Спасите. Сделайте всё, что можно». И мы взялись.</p>
 
-  <div id="detailPage">
-    <div class="container"><a href="#" class="btn btn-back" id="backButton">← Назад ко всем услугам</a><div class="detail-header"><h2 id="detailTitle" class="accent-text"></h2><div class="detail-price" id="detailPrice"></div></div><div class="detail-content"><img id="detailImg" src="" alt="" class="detail-img"><div class="detail-info"><h3>Описание услуги</h3><p id="detailDesc"></p><h3>Что входит в услугу</h3><ul id="detailIncludes"></ul><div class="detail-actions"><a href="tel:+79287666510" class="btn btn-call" style="width:auto;">📞 Позвонить и записаться</a><a href="https://n1318221.yclients.com/" target="_blank" class="btn btn-outline">Онлайн-запись</a></div></div></div></div>
-  </div>
+      <h3>Что мы сделали</h3>
+      <p>Начали с полной очистки: вычистили осколки, пропылесосили салон, затянули пустой проём плёнкой. Затем — кузовной ремонт. Корвет выполнен из карбона, поэтому заделка дыр и восстановление порванных элементов багажника заняли время. После этого — полный перекрас кузова, замена обоих стёкол и фары.</p>
+      <p>Когда Корвет вернулся к нам, началась финишная работа. Провели химчистку салона в несколько этапов — запахи сохранялись очень долго. Прочистили все воздуховоды. Запустили сухой туман и провели озонацию — убрали плесневелые ароматы, обеззаразили салон, придали аромат новой кожи. Все кожаные элементы обработали защитным составом.</p>
+      <p>Затем — полировка кузова и нанесение керамического покрытия. Зоны риска оклеили защитной плёнкой. Финальный штрих — антидождь на все стёкла.</p>
+
+      <h3>Результат</h3>
+      <p>Корвет полностью восстановлен и возвращён владелице. От былых повреждений не осталось и следа. Автомобиль сияет, салон дышит свежестью, кузов защищён на годы вперёд.</p>
+
+      <h3>Фотографии «После»</h3>
+      <div class="case-collage"><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0190%203.jpg" alt="После 1"><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0460.JPG" alt="После 2"></div>
+      <h3>Фотографии «До»</h3>
+      <div class="case-collage"><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0475%202.jpg" alt="До 1"><img src="https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0476%202.jpg" alt="До 2"></div>
+
+      <div class="detail-actions" style="margin-top:30px;"><a href="tel:+79287666510" class="btn btn-call" style="width:auto;">📞 Позвонить и записаться</a><a href="https://n1318221.yclients.com/" target="_blank" class="btn btn-outline">Онлайн-запись</a></div>
+    </div>
+  </div></div>
+
+  <div id="promoDetailPage"><div class="container"><a href="#" class="btn btn-back" id="promoBackButton">← Назад к акциям</a><div class="detail-header"><h2 id="promoDetailTitle" class="accent-text"></h2></div><div class="detail-content"><div class="detail-info"><h3>Описание акции</h3><p id="promoDetailDesc"></p><h3>Стоимость</h3><div id="promoDetailPrices"></div><h3>Что входит</h3><ul id="promoDetailIncludes"></ul><div class="detail-actions"><a href="tel:+79287666510" class="btn btn-call" style="width:auto;">📞 Позвонить и записаться</a><a href="https://n1318221.yclients.com/" target="_blank" class="btn btn-outline">Онлайн-запись</a></div></div></div></div></div>
+
+  <div id="detailPage"><div class="container"><a href="#" class="btn btn-back" id="backButton">← Назад ко всем услугам</a><div class="detail-header"><h2 id="detailTitle" class="accent-text"></h2><div class="detail-price" id="detailPrice"></div></div><div class="detail-content"><img id="detailImg" src="" alt="" class="detail-img"><div class="detail-info"><h3>Описание услуги</h3><p id="detailDesc"></p><h3>Что входит в услугу</h3><ul id="detailIncludes"></ul><div class="detail-actions"><a href="tel:+79287666510" class="btn btn-call" style="width:auto;">📞 Позвонить и записаться</a><a href="https://n1318221.yclients.com/" target="_blank" class="btn btn-outline">Онлайн-запись</a></div></div></div></div></div>
+
+  <div id="blogDetailPage"><div class="container"><a href="#" class="btn btn-back" id="blogBackButton">← Назад к блогу</a><div class="detail-header"><h2 id="blogDetailTitle" class="accent-text"></h2></div><div class="detail-content"><div class="detail-info"><div id="blogDetailContent"></div></div></div></div></div>
 
   <script>
     (function() {
       const servicesData = [
-        { id: "detailing-wash", title: "Детейлинг мойка кузова", desc: "Двухфазная мойка с активной бесконтактной пеной и ручным шампунем. Удаление битума и бережное удаление загрязнений без риска микроцарапин. Несколько комплексов на выбор — позвоните, подберём подходящий.", price: "от 3 500 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_9778.JPG", includes: ["Активная бесконтактная пена", "Ручная мойка с шампунем", "Удаление битума", "Проработка стыков и эмблем", "Сушка без разводов", "Чернение резины в подарок", "Лист под ноги + парфюм Krytex", "Несколько комплексов на выбор"] },
+        { id: "detailing-wash", title: "Детейлинг мойка кузова", desc: "Двухфазная мойка с активной бесконтактной пеной и ручным шампунем. Удаление битума и бережное удаление загрязнений без риска микроцарапин. Несколько комплексов на выбор.", price: "от 3 500 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_9778.JPG", includes: ["Активная бесконтактная пена", "Ручная мойка с шампунем", "Удаление битума", "Проработка стыков и эмблем", "Сушка без разводов", "Чернение резины в подарок", "Лист под ноги + парфюм Krytex"] },
         { id: "engine-wash", title: "Детейлинг мойка двигателя", desc: "Бережная очистка подкапотного пространства с применением специализированной химии. Удаление масляных отложений, грязи и технической пыли.", price: "от 3 000 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/clipia-b1015313.jpg", includes: ["Диагностика состояния двигателя", "Обработка специализированной химией", "Бережная очистка всех узлов", "Сушка сжатым воздухом", "Защита электрических компонентов", "Обработка пластиковых элементов"] },
         { id: "dry-cleaning", title: "Химчистка салона", desc: "Не маскируем запахи — убираем их причину. Горячий экстрактор и премиальная химия извлекают грязь из глубины ткани. Салон как новый.", price: "от 10 000 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_9262.JPG", includes: ["Горячий экстрактор Karcher", "Премиальная химия Koch", "Удаление пятен любой сложности", "Чистка потолка и всех поверхностей", "Обработка паром для дезинфекции", "Финальная сушка салона"] },
         { id: "polishing", title: "Полировка кузова", desc: "Убираем «паутинку», голограммы, мелкие царапины и окисление лака. Профессиональные абразивные пасты Rupes возвращают глубину и блеск.", price: "от 15 000 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_8926.JPG", includes: ["Мойка и обезжиривание кузова", "Замер толщины ЛКП", "Абразивная полировка 2-3 этапа", "Финишная защитная обработка", "Удаление голограмм и «паутинки»", "Контроль качества под спецсветом"] },
         { id: "ceramic", title: "Керамическое покрытие", desc: "Составы с высоким содержанием SiO₂ создают прочный гидрофобный слой. Защита от реагентов, битума, ультрафиолета и мелких царапин. Гарантия от 1 года при обслуживании авто у нас.", price: "от 11 000 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0458.jpg", includes: ["Подготовка кузова (мойка, обезжиривание)", "Нанесение керамики в 1-3 слоя", "Инфракрасная сушка каждого слоя", "Финальная проверка гидрофоба", "Гарантия от 1 года при обслуживании у нас"] },
         { id: "antirain", title: "Антидождь Krytex", desc: "Обработка стёкол составом Krytex. Вода собирается в капли и сдувается потоком воздуха на скорости от 60 км/ч. Улучшает обзор в дождь.", price: "от 2 500 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_9249.JPG", includes: ["Очистка и обезжиривание стёкол", "Нанесение состава Krytex", "Полировка для прозрачности", "Проверка гидрофобного эффекта"] },
-        { id: "presale", title: "Предпродажная подготовка", desc: "Комплекс услуг для повышения стоимости автомобиля перед продажей. Включает лёгкую химчистку салона, чернение резины, чистку стёкол и пластика, удаление запахов. Машина выглядит дороже — продаётся быстрее и выгоднее.", price: "от 12 000 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0455.JPG", includes: ["Лёгкая химчистка салона", "Чистка стёкол и пластика", "Чернение резины", "Удаление стойких запахов", "Антидождь стёкол", "Финальная презентация"] },
-        { id: "ozone", title: "Озонирование + сухой туман", desc: "Удаление стойких запахов во всём салоне и воздуховодах. Уничтожает до 99% бактерий и грибков. Безопасно для всех типов обивки.", price: "от 2 500 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_9085.PNG", includes: ["Обработка салона сухим туманом", "Озонирование всех поверхностей", "Прочистка воздуховодов", "Уничтожение бактерий и грибков"] }
+        { id: "presale", title: "Предпродажная подготовка", desc: "Комплекс услуг для повышения стоимости автомобиля перед продажей. Включает комплексную мойку, лёгкую химчистку салона, полироль пластика, удаление битума, уборку багажника, удаление металлических вкраплений.", price: "от 12 000 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0455.JPG", includes: ["Комплексная мойка кузова", "Лёгкая химчистка салона", "Полироль пластика", "Удаление битума с кузова", "Уборка багажника", "Удаление металлических вкраплений", "Чернение резины", "Чистка стёкол"] },
+        { id: "ozone", title: "Озонирование + сухой туман", desc: "Удаление стойких запахов во всём салоне и воздуховодах. Уничтожает до 99% бактерий и грибков. Безопасно для всех типов обивки.", price: "от 2 500 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_9085.PNG", includes: ["Обработка салона сухим туманом", "Озонирование всех поверхностей", "Прочистка воздуховодов", "Уничтожение бактерий и грибков"] },
+        { id: "wrap", title: "Оклейка защитной плёнкой", desc: "Защита кузова от сколов, царапин и пескоструя. Премиальные полиуретановые плёнки. Оклейка зон риска: передний бампер, капот, крылья, зеркала.", price: "от 65 000 ₽", img: "https://raw.githubusercontent.com/andreevaa140901/rs-detailing-images/main/IMG_0477.JPG", includes: ["Подготовка кузова (мойка, обезжиривание)", "Раскрой и подгонка плёнки", "Оклейка зон риска", "Удаление пузырей и финишная обработка", "Гарантия на выполненные работы"] }
       ];
 
       const grid = document.getElementById('servicesGrid');
@@ -264,9 +335,7 @@
         grid.appendChild(card);
       });
 
-      let lastServiceId = null;
       function openDetailPage(service) {
-        lastServiceId = service.id;
         document.getElementById('detailTitle').textContent = service.title;
         document.getElementById('detailPrice').textContent = service.price;
         document.getElementById('detailImg').src = service.img;
@@ -274,25 +343,21 @@
         const list = document.getElementById('detailIncludes');
         list.innerHTML = '';
         service.includes.forEach(item => { const li = document.createElement('li'); li.textContent = item; list.appendChild(li); });
-        document.getElementById('mainContent').style.display = 'none';
-        document.getElementById('promoDetailPage').style.display = 'none';
+        hideAllPages();
         document.getElementById('detailPage').style.display = 'block';
-        history.pushState({ page: 'service', serviceId: service.id }, '', '#service-' + service.id);
+        history.pushState({ page: 'service' }, '', '#service-' + service.id);
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
 
-      document.getElementById('backButton').addEventListener('click', function(e) {
-        e.preventDefault();
+      function hideAllPages() {
+        document.getElementById('mainContent').style.display = 'none';
         document.getElementById('detailPage').style.display = 'none';
-        document.getElementById('mainContent').style.display = 'block';
-        history.back();
-        if (lastServiceId) {
-          const target = document.getElementById('services');
-          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      });
+        document.getElementById('promoDetailPage').style.display = 'none';
+        document.getElementById('blogDetailPage').style.display = 'none';
+        document.getElementById('caseDetailPage').style.display = 'none';
+      }
+
+      document.getElementById('backButton').addEventListener('click', function(e) { e.preventDefault(); hideAllPages(); document.getElementById('mainContent').style.display = 'block'; history.back(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
       function openPromoDetail(type) {
         let title, desc, prices, includes;
@@ -313,38 +378,108 @@
         const list = document.getElementById('promoDetailIncludes');
         list.innerHTML = '';
         includes.forEach(item => { const li = document.createElement('li'); li.textContent = item; list.appendChild(li); });
-        document.getElementById('mainContent').style.display = 'none';
-        document.getElementById('detailPage').style.display = 'none';
+        hideAllPages();
         document.getElementById('promoDetailPage').style.display = 'block';
-        history.pushState({ page: 'promo', type: type }, '', '#promo-' + type);
+        history.pushState({ page: 'promo' }, '', '#promo-' + type);
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
 
-      document.getElementById('promoBackButton').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementById('promoDetailPage').style.display = 'none';
-        document.getElementById('mainContent').style.display = 'block';
-        history.back();
-        const target = document.getElementById('promo');
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
+      document.getElementById('promoBackButton').addEventListener('click', function(e) { e.preventDefault(); hideAllPages(); document.getElementById('mainContent').style.display = 'block'; history.back(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+      function openCaseDetail() {
+        hideAllPages();
+        document.getElementById('caseDetailPage').style.display = 'block';
+        history.pushState({ page: 'case' }, '', '#case-detail');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      document.getElementById('caseBackButton').addEventListener('click', function(e) { e.preventDefault(); hideAllPages(); document.getElementById('mainContent').style.display = 'block'; history.back(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
       window.addEventListener('popstate', function(event) {
-        if (document.getElementById('detailPage').style.display === 'block' || document.getElementById('promoDetailPage').style.display === 'block') {
-          document.getElementById('detailPage').style.display = 'none';
-          document.getElementById('promoDetailPage').style.display = 'none';
+        if (document.getElementById('detailPage').style.display === 'block' || document.getElementById('promoDetailPage').style.display === 'block' || document.getElementById('blogDetailPage').style.display === 'block' || document.getElementById('caseDetailPage').style.display === 'block') {
+          hideAllPages();
           document.getElementById('mainContent').style.display = 'block';
-          if (lastServiceId) {
-            const target = document.getElementById('services');
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          } else {
-            const target = document.getElementById('promo');
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       });
 
       window.openPromoDetail = openPromoDetail;
+      window.openCaseDetail = openCaseDetail;
+
+      const priceData = [
+        ["Экспресс", "800", "900", "1000"],
+        ["Кузов + салон", "1800", "1900", "2100"],
+        ["Кузов + коврики", "1200", "1300", "1400"],
+        ["Салон", "900", "1000", "1000"],
+        ["3 фаза воск", "800", "900", "1000"],
+        ["3 фаза квик", "1000", "1100", "1200"],
+        ["3 фаза кварц", "1500", "1600", "1700"],
+        ["3 фаза твёрдый воск", "4000", "4500", "5000"],
+        ["Багажник", "300", "300", "350"],
+        ["Чернение", "250", "250", "250"],
+        ["Антимошка", "400", "400", "400"],
+        ["Чистка кожи", "2000", "2000", "2000"],
+        ["Кондиционер кожи (1 переднее)", "600", "600", "600"],
+        ["Кондиционер кожи (заднее)", "1200", "1200", "1200"],
+        ["Кондиционер кожи (весь салон)", "2000", "2000", "2000"],
+        ["Чистка пластика", "700", "800", "900"],
+        ["Полироль пластика", "600", "650", "700"],
+        ["Антибитум", "1000", "1100", "1200"],
+        ["Химчистка дисков без снятия", "800", "1000", "1200"],
+        ["Химчистка дисков со снятием", "2500", "3000", "3500"],
+        ["Озонирование", "1500", "1500", "1500"],
+        ["Сухой туман", "2500", "2500", "2500"],
+        ["Антидождь передняя полусфера", "3500", "3500", "3500"],
+        ["Антидождь круг", "6000", "6000", "6000"],
+        ["Антидождь лобовое", "2500", "2500", "2500"],
+        ["Жидкое стекло", "7000", "8000", "9000"],
+        ["Керамика 1 слой", "11000", "12000", "13000"],
+        ["Керамика Premium", "15000", "16000", "17000"],
+        ["Предпродажная подготовка", "12000", "13000", "14000"],
+        ["Лёгкая полировка кузова", "15000", "16000", "17000"],
+        ["Глубокая полировка кузова", "17000", "18000", "19000"],
+        ["Полировка место", "1500", "1500", "1500"],
+        ["Подкапывание/реставрация", "от 5000", "от 5000", "от 5000"],
+        ["Химчистка руля", "2000", "2000", "2000"],
+        ["Химчистка салона частичная", "10000", "11000", "12000"],
+        ["Химчистка салона полная (с разбором)", "22000", "22000", "23000"],
+        ["Химчистка салона полная (без разбора)", "17000", "17000", "18000"],
+        ["Химчистка сидения (переднее)", "1500", "1500", "1500"],
+        ["Химчистка сидения (заднее)", "3000", "3000", "3000"],
+        ["Химчистка багажника", "1000", "1000", "1100"],
+        ["Химчистка кузова", "3500", "3700", "4000"],
+        ["Мойка двигателя с консервацией", "3500", "3500", "4000"],
+        ["Мойка двигателя", "3000", "3000", "3500"],
+        ["Оклейка зон риска плёнкой", "65000", "70000", "75000"]
+      ];
+
+      let html = '<div class="price-table-wrapper"><table class="price-table"><thead><tr><th>Услуга</th><th>🚗 Легковая</th><th>🚙 Кроссовер</th><th>🚐 Джип</th></tr></thead><tbody>';
+      priceData.forEach(row => { html += `<tr><td>${row[0]}</td><td>${row[1]} ₽</td><td>${row[2]} ₽</td><td>${row[3]} ₽</td></tr>`; });
+      html += '</tbody></table></div>';
+      document.getElementById('priceTable').innerHTML = html;
+
+      function openBlogDetail(type) {
+        let title, content;
+        if (type === 'summer') {
+          title = 'Как подготовить автомобиль к летнему путешествию';
+          content = `<p style="color:#aaa;line-height:1.8;margin-bottom:15px;">Сезон отпусков в разгаре. Дальняя дорога — это нагрузка не только на водителя, но и на автомобиль.</p><h3 style="color:#F5A623;margin:20px 0 10px;">Защита кузова</h3><p style="color:#aaa;line-height:1.8;margin-bottom:15px;">Перед поездкой на кузов обрушиваются насекомые, битум, песок и мелкие камни. Керамическое покрытие создаёт защитный слой.</p><h3 style="color:#F5A623;margin:20px 0 10px;">Химчистка салона</h3><p style="color:#aaa;line-height:1.8;margin-bottom:15px;">Свежий, чистый салон без запахов — это отдых для водителя и пассажиров.</p><h3 style="color:#F5A623;margin:20px 0 10px;">Качественная мойка</h3><p style="color:#aaa;line-height:1.8;margin-bottom:15px;">Рекомендуем двухфазную мойку кузова с проработкой всех стыков и эмблем.</p><p style="color:#F5A623;font-weight:600;margin-top:20px;">RS-Detailing: г. Ростов-на-Дону, ул. Мечникова, 46.</p>`;
+        } else if (type === 'myths') {
+          title = 'Мифы о детейлинге: правда от профессионалов';
+          content = `<p style="color:#aaa;line-height:1.8;margin-bottom:15px;">Многие считают, что детейлинг — это дорого, долго и только для премиум-авто. Развеем главные мифы.</p><h3 style="color:#F5A623;margin:20px 0 10px;">Миф 1. «Детейлинг — это просто мойка»</h3><p style="color:#aaa;line-height:1.8;margin-bottom:15px;">На самом деле детейлинг — это комплекс процедур по восстановлению и защите автомобиля.</p><h3 style="color:#F5A623;margin:20px 0 10px;">Миф 2. «Керамика — распил на деньги»</h3><p style="color:#aaa;line-height:1.8;margin-bottom:15px;">Керамическое покрытие с высоким SiO₂ создаёт гидрофобный слой на 1-2 года.</p><h3 style="color:#F5A623;margin:20px 0 10px;">Миф 3. «Полировка портит лак»</h3><p style="color:#aaa;line-height:1.8;margin-bottom:15px;">Профессиональная полировка снимает микроны окисленного лака — это безопасно.</p><p style="color:#F5A623;font-weight:600;margin-top:20px;">RS-Detailing: г. Ростов-на-Дону, ул. Мечникова, 46.</p>`;
+        } else {
+          title = 'Скидка 15% на химчистку салона';
+          content = `<p style="color:#aaa;line-height:1.8;margin-bottom:15px;">Хотите, чтобы салон вашего автомобиля снова стал свежим и чистым? Действует акция: скидка 15%.</p><p style="color:#aaa;line-height:1.8;margin-bottom:15px;">Мы не просто чистим — мы возвращаем салону заводской вид.</p><h3 style="color:#F5A623;margin:20px 0 10px;">Варианты химчистки:</h3><ul style="list-style:none;margin:15px 0;color:#bbb;"><li style="margin-bottom:8px;padding-left:20px;position:relative;"><span style="color:#F5A623;position:absolute;left:0;">•</span> Лёгкая химчистка — от 10 000 руб.</li><li style="margin-bottom:8px;padding-left:20px;position:relative;"><span style="color:#F5A623;position:absolute;left:0;">•</span> Полная (без разбора) — от 17 000 руб.</li><li style="margin-bottom:8px;padding-left:20px;position:relative;"><span style="color:#F5A623;position:absolute;left:0;">•</span> Полная (с разбором) — от 22 000 руб.</li></ul><p style="color:#F5A623;font-weight:600;margin-top:20px;">RS-Detailing: г. Ростов-на-Дону, ул. Мечникова, 46.</p>`;
+        }
+        document.getElementById('blogDetailTitle').textContent = title;
+        document.getElementById('blogDetailContent').innerHTML = content;
+        hideAllPages();
+        document.getElementById('blogDetailPage').style.display = 'block';
+        history.pushState({ page: 'blog' }, '', '#blog-' + type);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      document.getElementById('blogBackButton').addEventListener('click', function(e) { e.preventDefault(); hideAllPages(); document.getElementById('mainContent').style.display = 'block'; history.back(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      window.openBlogDetail = openBlogDetail;
 
       const heroCar = document.getElementById('heroCar');
       setTimeout(() => { heroCar.classList.add('visible'); }, 300);
@@ -352,7 +487,6 @@
 
       const dividerSection = document.getElementById('dividerCar');
       const dividerCarElement = document.getElementById('dividerCarElement');
-
       function resetDividerAnimation() { dividerSection.classList.remove('animate'); void dividerCarElement.offsetWidth; requestAnimationFrame(() => { dividerSection.classList.add('animate'); }); }
       const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { resetDividerAnimation(); } }); }, { threshold: 0.3 });
       if (dividerSection) { observer.observe(dividerSection); }
